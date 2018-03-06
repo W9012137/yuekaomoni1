@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bwie.yuekaomoni1.View.MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:textColor="#fff"
+        android:background="#FF9800"
+        android:text="首页"
+        android:textSize="30px"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60px" />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"></FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:background="#F8F8F8"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50px">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:textSize="25px"
+            android:textColor="@drawable/aa"
+            android:checked="true"
+            android:gravity="center"
+            android:text="首页"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:textSize="25px"
+            android:textColor="@drawable/aa"
+            android:gravity="center"
+            android:text="商品"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:textSize="25px"
+            android:textColor="@drawable/aa"
+            android:gravity="center"
+            android:text="发现"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+</LinearLayout>

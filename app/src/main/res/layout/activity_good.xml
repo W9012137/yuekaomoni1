@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bwie.yuekaomoni1.View.GoodActivity">
+
+    <com.bwie.yuekaomoni1.ZiDingYi.AutoBanner
+        android:id="@+id/ban1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.bwie.yuekaomoni1.ZiDingYi.AutoBanner>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="50px"
+            android:textSize="25px"
+            android:id="@+id/g_t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            android:textSize="25px"
+            android:id="@+id/g_t2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            android:textSize="25px"
+            android:textColor="#ff00"
+            android:id="@+id/g_t3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <Button
+            android:textSize="30px"
+            android:gravity="center"
+            android:text="加入购物车"
+            android:id="@+id/bt1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:textSize="30px"
+            android:gravity="center"
+            android:text="查看购物车"
+            android:id="@+id/bt2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

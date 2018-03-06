@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <com.bwie.yuekaomoni1.ZiDingYi.AutoBanner
+               android:id="@+id/ban"
+               android:layout_gravity="center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"></com.bwie.yuekaomoni1.ZiDingYi.AutoBanner>
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+             <TextView
+                 android:layout_marginLeft="20dp"
+                 android:layout_gravity="center_vertical"
+                 android:textSize="20px"
+                 android:text="京东秒杀:"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+
+               <cn.iwgang.countdownview.CountdownView
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="5dp"
+                   android:id="@+id/cdm"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:timeBgRadius="5dp"
+                   app:timeBgColor="#000000"
+                   app:isHideTimeBackground="false"
+                   app:isShowDay="false"
+                   app:isShowHour="true"
+                   app:isShowMinute="true"
+                   app:isShowSecond="true"
+                   app:isShowMillisecond="false"
+                   app:timeTextColor="#FFFFFF"
+                   app:timeTextSize="15sp"
+                   app:isTimeTextBold="true"
+                   app:suffixGravity="center"
+                   app:suffixTextColor="#000000"
+                   app:suffixTextSize="12sp"
+                   />
+           </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rlv"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"></android.support.v7.widget.RecyclerView>
+
+           <View
+               android:background="#000"
+               android:layout_width="wrap_content"
+               android:layout_height="0.75dp"/>
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="25px"
+                android:text="为  你  推  荐"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+           <View
+               android:background="#000"
+               android:layout_width="wrap_content"
+               android:layout_height="0.75dp"/>
+
+           <android.support.v7.widget.RecyclerView
+               android:id="@+id/rlv1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+       </LinearLayout>
+
+   </ScrollView>
+
+</LinearLayout>
